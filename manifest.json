@@ -2,6 +2,58 @@
   "schema": 1,
   "firmware": [
     {
+      "series": "sw-anchor-basic",
+      "product": 1,
+      "format": "gps-bundle",
+      "hardware": "",
+      "version": "2.0.0",
+      "build": 0,
+      "checkpoint": true,
+      "channel": "test",
+      "published": "2026-11-16",
+      "components": [
+        {
+          "target": 3,
+          "name": "gps-steer-driver",
+          "version": "1"
+        },
+        {
+          "target": 4,
+          "name": "gps-steer-sensor",
+          "version": "1"
+        },
+        {
+          "target": 5,
+          "name": "gps-key-led",
+          "version": "1"
+        },
+        {
+          "target": 2,
+          "name": "gps-main-ctrl-rtt",
+          "version": "2",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.0-b0/gps-main-ctrl-rtt-2.gpsfw",
+          "size": 179229,
+          "sha256": "528d54816905ee2cea4b229e023033a5a7e5d8c640c4f12d500cb9974f7ddff7"
+        },
+        {
+          "target": 1,
+          "name": "gps-ble-esp",
+          "version": "2",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.0-b0/gps-ble-esp-2.gpsfw",
+          "size": 388841,
+          "sha256": "504821c1477b635ea2ed9be149cebc8aba92ae9519a67bd84180d542b43ef7c9"
+        }
+      ],
+      "notes": {
+        "zh": "一次性重要升级（迁移版）：主控和蓝牙模块升级到新版本。App 改用新的控制协议，支持新版智能遥控器和小遥控器配对；马达蓝牙名称改为 SW-TM-XXXX。以后的马达更新都在这个版本之后进行。",
+        "en": "One-time major update (migration): new firmware for the main controller and the Bluetooth module. The app uses the new control protocol and supports pairing the new smart remote and the mini remote; the motor's Bluetooth name becomes SW-TM-XXXX. Future motor updates require this version."
+      },
+      "caution": {
+        "zh": "升级约需 10 分钟，期间不要按马达电源键。升级后请重新校准（指南针、转向）。智能遥控器要升级到新版本并重新配对后才能使用。",
+        "en": "The update takes about 10 minutes; do not press the motor's power key. Recalibrate afterwards (compass and steering). The smart remote works again only after it is updated and paired again."
+      }
+    },
+    {
       "series": "sw-shallow-anchor",
       "product": 2,
       "target": "ch582",
