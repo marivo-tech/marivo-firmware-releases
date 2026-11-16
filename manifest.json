@@ -6,7 +6,7 @@
       "product": 1,
       "format": "gps-bundle",
       "hardware": "",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "build": 0,
       "checkpoint": true,
       "channel": "test",
@@ -30,10 +30,10 @@
         {
           "target": 2,
           "name": "gps-main-ctrl-rtt",
-          "version": "2",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.0-b0/gps-main-ctrl-rtt-2.gpsfw",
-          "size": 179229,
-          "sha256": "528d54816905ee2cea4b229e023033a5a7e5d8c640c4f12d500cb9974f7ddff7"
+          "version": "3",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.1-b0/gps-main-ctrl-rtt-3.gpsfw",
+          "size": 179235,
+          "sha256": "2ef9b45c68ecc045db25fc52edfdf18f6404544c0ecb2d3eb8036bd896dee419"
         },
         {
           "target": 1,
