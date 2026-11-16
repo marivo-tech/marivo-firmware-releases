@@ -6,7 +6,7 @@
       "product": 1,
       "format": "gps-bundle",
       "hardware": "",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "build": 0,
       "checkpoint": true,
       "channel": "test",
@@ -25,28 +25,31 @@
         {
           "target": 5,
           "name": "gps-key-led",
-          "version": "1"
+          "version": "2",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.2-b0/gps-key-led-2.gpsfw",
+          "size": 13167,
+          "sha256": "80f43af3db340ff7257ed32669bbe7275962e9104ffef2fed95d67658cf4dd28"
         },
         {
           "target": 2,
           "name": "gps-main-ctrl-rtt",
-          "version": "3",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.1-b0/gps-main-ctrl-rtt-3.gpsfw",
-          "size": 179235,
-          "sha256": "2ef9b45c68ecc045db25fc52edfdf18f6404544c0ecb2d3eb8036bd896dee419"
+          "version": "4",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.2-b0/gps-main-ctrl-rtt-4.gpsfw",
+          "size": 179340,
+          "sha256": "09e9d665b969ccf19e63d1edd270efba9512029306985aae383acff4df6526ca"
         },
         {
           "target": 1,
           "name": "gps-ble-esp",
-          "version": "2",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.0-b0/gps-ble-esp-2.gpsfw",
-          "size": 388841,
-          "sha256": "504821c1477b635ea2ed9be149cebc8aba92ae9519a67bd84180d542b43ef7c9"
+          "version": "6",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.2-b0/gps-ble-esp-6.gpsfw",
+          "size": 389101,
+          "sha256": "b1f74057faefe71a943fe8d2e332c2b94544b5ecb070339c5fb64eae5de05017"
         }
       ],
       "notes": {
-        "zh": "一次性重要升级（迁移版）：主控和蓝牙模块升级到新版本。App 改用新的控制协议，支持新版智能遥控器和小遥控器配对；马达蓝牙名称改为 SW-TM-XXXX。以后的马达更新都在这个版本之后进行。",
-        "en": "One-time major update (migration): new firmware for the main controller and the Bluetooth module. The app uses the new control protocol and supports pairing the new smart remote and the mini remote; the motor's Bluetooth name becomes SW-TM-XXXX. Future motor updates require this version."
+        "zh": "一次性重要升级（迁移版）：主控、蓝牙模块升级到新版本，灯板统一为版本 2。App 改用新的控制协议，支持新版智能遥控器和小遥控器配对；马达蓝牙名称改为 SW-TM-XXXX；按住配对键时蜂鸣器一直响。以后的马达更新都在这个版本之后进行。",
+        "en": "One-time major update (migration): new firmware for the main controller and the Bluetooth module; the light board is unified to version 2. The app uses the new control protocol and supports pairing the new smart remote and the mini remote; the motor's Bluetooth name becomes SW-TM-XXXX; the buzzer sounds continuously while the pairing key is held. Future motor updates require this version."
       },
       "caution": {
         "zh": "升级约需 10 分钟，期间不要按马达电源键。升级后请重新校准（指南针、转向）。智能遥控器要升级到新版本并重新配对后才能使用。",
