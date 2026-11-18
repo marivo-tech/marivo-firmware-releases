@@ -75,6 +75,27 @@
         "zh": "首个支持蓝牙在线升级的版本（测试版）。",
         "en": "First version with Bluetooth online update (test build)."
       }
+    },
+    {
+      "series": "sw-smart-remote",
+      "product": 3,
+      "format": "sifli-dfu",
+      "hardware": "0x00520001",
+      "version": "10024",
+      "build": 0,
+      "channel": "test",
+      "size": 1297014,
+      "sha256": "6a47f7ff62174d995dda54d2b600cab860e4249b54e0d28ef581ff3bba866a29",
+      "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-smart-remote-v10024-b0/sw-smart-remote_v10024.zip",
+      "published": "2026-11-18",
+      "notes": {
+        "zh": "配合马达迁移版（整机 2.0.3）的新版遥控器：改由马达连接遥控器，在遥控器的配对页面配对；改用新的控制协议；电机设置分类，新增定位卫星、电机信息、故障码、转向速度、指示灯亮度；修复按住转向只动一下、按键偶尔没反应；马达复位后自动恢复连接。",
+        "en": "New remote firmware for the migrated motor (2.0.3): the motor now connects to the remote, paired from the remote's pairing page; new control protocol; motor settings grouped, with satellites, motor info, fault codes, steering speed and light brightness; fixes steering moving only once while held and keys occasionally not responding; reconnects by itself after the motor restarts."
+      },
+      "caution": {
+        "zh": "只能配合已升级到 2.0.3 的马达使用，出厂版本的马达连不上。升级后在遥控器上打开配对页面，再按住马达灯板上的配对键，配对成功后才能使用。",
+        "en": "Works only with a motor updated to 2.0.3; motors with the original firmware can't connect. After the update, open the pairing page on the remote and hold the pairing key on the motor's light board until pairing succeeds."
+      }
     }
   ]
 }
