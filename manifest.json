@@ -6,6 +6,64 @@
       "product": 1,
       "format": "gps-bundle",
       "hardware": "",
+      "version": "2.0.5",
+      "build": 0,
+      "checkpoint": false,
+      "channel": "test",
+      "published": "2026-11-18",
+      "components": [
+        {
+          "target": 3,
+          "name": "gps-steer-driver",
+          "version": "6",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-steer-driver-6.gpsfw",
+          "size": 43024,
+          "sha256": "06d6196115047a184064f96da1aa997d1f556825fa2a89b2a2e6710781aae356"
+        },
+        {
+          "target": 4,
+          "name": "gps-steer-sensor",
+          "version": "1"
+        },
+        {
+          "target": 5,
+          "name": "gps-key-led",
+          "version": "2",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.2-b0/gps-key-led-2.gpsfw",
+          "size": 13167,
+          "sha256": "80f43af3db340ff7257ed32669bbe7275962e9104ffef2fed95d67658cf4dd28"
+        },
+        {
+          "target": 2,
+          "name": "gps-main-ctrl-rtt",
+          "version": "8",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.5-b0/gps-main-ctrl-rtt-8.gpsfw",
+          "size": 198181,
+          "sha256": "553234d3ba8bba839516a7ded24682ede4336fdcae539cdbe470bb9b54b73a29"
+        },
+        {
+          "target": 1,
+          "name": "gps-ble-esp",
+          "version": "8",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.5-b0/gps-ble-esp-8.gpsfw",
+          "size": 372960,
+          "sha256": "e2f54dcaa74dd2a6fa2ad2867aebb951ee7bf63576ba9052fc078e82ca51091d"
+        }
+      ],
+      "notes": {
+        "zh": "转向：角度传感器不跟着转（例如磁铁松动）时立即停下并报故障，不再一直转。遥控器配对：附近另一台马达记着这个遥控器时也能配上；遥控器已配给别的马达后，原来的马达不再反复去连。",
+        "en": "Steering: stops at once and reports a fault when the angle sensor does not follow (e.g. a loose magnet) instead of turning on. Remote pairing: works even when another motor nearby still knows the remote; a motor no longer keeps reconnecting a remote that was paired to another motor."
+      },
+      "caution": {
+        "zh": "升级约 5 分钟，期间不要按马达电源键。",
+        "en": "The update takes about 5 minutes; do not press the motor's power key."
+      }
+    },
+    {
+      "series": "sw-anchor-basic",
+      "product": 1,
+      "format": "gps-bundle",
+      "hardware": "",
       "version": "2.0.4",
       "build": 0,
       "checkpoint": false,
