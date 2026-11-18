@@ -6,6 +6,64 @@
       "product": 1,
       "format": "gps-bundle",
       "hardware": "",
+      "version": "2.0.4",
+      "build": 0,
+      "checkpoint": false,
+      "channel": "test",
+      "published": "2026-11-18",
+      "components": [
+        {
+          "target": 3,
+          "name": "gps-steer-driver",
+          "version": "6",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-steer-driver-6.gpsfw",
+          "size": 43024,
+          "sha256": "06d6196115047a184064f96da1aa997d1f556825fa2a89b2a2e6710781aae356"
+        },
+        {
+          "target": 4,
+          "name": "gps-steer-sensor",
+          "version": "1"
+        },
+        {
+          "target": 5,
+          "name": "gps-key-led",
+          "version": "2",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.2-b0/gps-key-led-2.gpsfw",
+          "size": 13167,
+          "sha256": "80f43af3db340ff7257ed32669bbe7275962e9104ffef2fed95d67658cf4dd28"
+        },
+        {
+          "target": 2,
+          "name": "gps-main-ctrl-rtt",
+          "version": "7",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.4-b0/gps-main-ctrl-rtt-7.gpsfw",
+          "size": 197358,
+          "sha256": "b2f12af89ef9781a8af917ca07d1674a4ed720a343ec3b75bd0df2609dd70d83"
+        },
+        {
+          "target": 1,
+          "name": "gps-ble-esp",
+          "version": "7",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-ble-esp-7.gpsfw",
+          "size": 372618,
+          "sha256": "9cdb2fb40315c5b441004121fd908d78acaf29688592983a7dc51bd2b9b8f2e4"
+        }
+      ],
+      "notes": {
+        "zh": "转向定位改进：转到指定角度时不再冲过头、来回摆动，回零更准，定锚时转向更稳。只更新主控。",
+        "en": "Steering positioning: no more overshooting and swinging back and forth when turning to an angle; homing is more accurate and steering steadier while anchoring. Only the main controller is updated."
+      },
+      "caution": {
+        "zh": "升级约 3 分钟，期间不要按马达电源键。",
+        "en": "The update takes about 3 minutes; do not press the motor's power key."
+      }
+    },
+    {
+      "series": "sw-anchor-basic",
+      "product": 1,
+      "format": "gps-bundle",
+      "hardware": "",
       "version": "2.0.3",
       "build": 0,
       "checkpoint": true,
