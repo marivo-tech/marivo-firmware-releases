@@ -6,16 +6,19 @@
       "product": 1,
       "format": "gps-bundle",
       "hardware": "",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "build": 0,
       "checkpoint": true,
       "channel": "test",
-      "published": "2026-11-16",
+      "published": "2026-11-18",
       "components": [
         {
           "target": 3,
           "name": "gps-steer-driver",
-          "version": "1"
+          "version": "6",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-steer-driver-6.gpsfw",
+          "size": 43024,
+          "sha256": "06d6196115047a184064f96da1aa997d1f556825fa2a89b2a2e6710781aae356"
         },
         {
           "target": 4,
@@ -33,27 +36,27 @@
         {
           "target": 2,
           "name": "gps-main-ctrl-rtt",
-          "version": "4",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.2-b0/gps-main-ctrl-rtt-4.gpsfw",
-          "size": 179340,
-          "sha256": "09e9d665b969ccf19e63d1edd270efba9512029306985aae383acff4df6526ca"
+          "version": "6",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-main-ctrl-rtt-6.gpsfw",
+          "size": 196069,
+          "sha256": "3445f5ba85d4db257e3fc7803a63d2d3eb83b3a70699a73c86543a4d759f1945"
         },
         {
           "target": 1,
           "name": "gps-ble-esp",
-          "version": "6",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.2-b0/gps-ble-esp-6.gpsfw",
-          "size": 389101,
-          "sha256": "b1f74057faefe71a943fe8d2e332c2b94544b5ecb070339c5fb64eae5de05017"
+          "version": "7",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-ble-esp-7.gpsfw",
+          "size": 372618,
+          "sha256": "9cdb2fb40315c5b441004121fd908d78acaf29688592983a7dc51bd2b9b8f2e4"
         }
       ],
       "notes": {
-        "zh": "一次性重要升级（迁移版）：主控、蓝牙模块升级到新版本，灯板统一为版本 2。App 改用新的控制协议，支持新版智能遥控器和小遥控器配对；马达蓝牙名称改为 SW-TM-XXXX；按住配对键时蜂鸣器一直响。以后的马达更新都在这个版本之后进行。",
-        "en": "One-time major update (migration): new firmware for the main controller and the Bluetooth module; the light board is unified to version 2. The app uses the new control protocol and supports pairing the new smart remote and the mini remote; the motor's Bluetooth name becomes SW-TM-XXXX; the buzzer sounds continuously while the pairing key is held. Future motor updates require this version."
+        "zh": "一次性大版本更新（迁移版）：更新电源板、灯板、主控和蓝牙模块。App 改用新的控制协议，支持新版智能遥控器和小遥控器配对；马达蓝牙名改为 SW-TM-XXXX。新增转向速度三档、电池电压与类型设置和低电量提示、无操作自动关机（默认关闭）、GPS 模组开机自检和 7 个卫星系统的卫星数、故障码与清除故障。以后的马达更新都需要先装这个版本。",
+        "en": "One-time major update (migration): new firmware for the power board, light board, main controller and Bluetooth module. The app uses the new control protocol and pairs the new smart remote and the mini remote; the motor's Bluetooth name becomes SW-TM-XXXX. New: three steering speeds, battery voltage and type settings with low-battery prompts, auto power-off when idle (off by default), GPS module self-check and satellites for 7 systems, fault codes with clearing. Future motor updates require this version."
       },
       "caution": {
-        "zh": "升级约需 10 分钟，期间不要按马达电源键。升级后请重新校准（指南针、转向）。智能遥控器要升级到新版本并重新配对后才能使用。",
-        "en": "The update takes about 10 minutes; do not press the motor's power key. Recalibrate afterwards (compass and steering). The smart remote works again only after it is updated and paired again."
+        "zh": "升级约 15 分钟。期间不要按马达电源键、不要断开电池，手机放在马达旁边、不要离开升级页面。电源板控制整机供电，刷电源板时断电可能需要返厂维修。升级后请重新校准（指南针和转向）。智能遥控器要升级到新版本并重新配对后才能使用。",
+        "en": "The update takes about 15 minutes. Do not press the motor's power key or disconnect the battery; keep the phone next to the motor and stay on the update page. The power board supplies the whole motor: losing power while it is being updated may require a factory repair. Recalibrate afterwards (compass and steering). The smart remote works again only after it is updated and paired again."
       }
     },
     {
@@ -71,27 +74,6 @@
       "notes": {
         "zh": "首个支持蓝牙在线升级的版本（测试版）。",
         "en": "First version with Bluetooth online update (test build)."
-      }
-    },
-    {
-      "series": "sw-smart-remote",
-      "product": 3,
-      "format": "sifli-dfu",
-      "hardware": "0x00520001",
-      "version": "10018",
-      "build": 0,
-      "channel": "test",
-      "size": 1224770,
-      "sha256": "595b085d392f3761d0a1f3f3fb493f612fb71256249faf6cb65f2e1247cd5a34",
-      "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-smart-remote-v10018-b0/sw-smart-remote_v10018.zip",
-      "published": "2026-11-14",
-      "notes": {
-        "zh": "• 设备信息页显示设备名称（升级时的蓝牙名称 SW-RM-XXXX）、硬件版本和软件版本\n• 不再显示公司",
-        "en": "• Device info shows the device name (the Bluetooth name used for updates, SW-RM-XXXX), hardware version and software version\n• Company is no longer shown"
-      },
-      "caution": {
-        "zh": "测试版，只用于验证 App 升级流程。",
-        "en": "Test build, only for verifying updates from the app."
       }
     }
   ]
