@@ -6,17 +6,17 @@
       "product": 1,
       "format": "gps-bundle",
       "hardware": "",
-      "version": "2.0.5",
+      "version": "2.1.0",
       "build": 0,
-      "checkpoint": false,
-      "channel": "test",
-      "published": "2026-11-18",
+      "checkpoint": true,
+      "channel": "stable",
+      "published": "2026-11-19",
       "components": [
         {
           "target": 3,
           "name": "gps-steer-driver",
           "version": "6",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-steer-driver-6.gpsfw",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.1.0-b0/gps-steer-driver-6.gpsfw",
           "size": 43024,
           "sha256": "06d6196115047a184064f96da1aa997d1f556825fa2a89b2a2e6710781aae356"
         },
@@ -29,7 +29,7 @@
           "target": 5,
           "name": "gps-key-led",
           "version": "2",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.2-b0/gps-key-led-2.gpsfw",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.1.0-b0/gps-key-led-2.gpsfw",
           "size": 13167,
           "sha256": "80f43af3db340ff7257ed32669bbe7275962e9104ffef2fed95d67658cf4dd28"
         },
@@ -37,7 +37,7 @@
           "target": 2,
           "name": "gps-main-ctrl-rtt",
           "version": "8",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.5-b0/gps-main-ctrl-rtt-8.gpsfw",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.1.0-b0/gps-main-ctrl-rtt-8.gpsfw",
           "size": 198181,
           "sha256": "553234d3ba8bba839516a7ded24682ede4336fdcae539cdbe470bb9b54b73a29"
         },
@@ -45,130 +45,14 @@
           "target": 1,
           "name": "gps-ble-esp",
           "version": "8",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.5-b0/gps-ble-esp-8.gpsfw",
+          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.1.0-b0/gps-ble-esp-8.gpsfw",
           "size": 372960,
           "sha256": "e2f54dcaa74dd2a6fa2ad2867aebb951ee7bf63576ba9052fc078e82ca51091d"
         }
       ],
       "notes": {
-        "zh": "转向：角度传感器不跟着转（例如磁铁松动）时立即停下并报故障，不再一直转。遥控器配对：附近另一台马达记着这个遥控器时也能配上；遥控器已配给别的马达后，原来的马达不再反复去连。",
-        "en": "Steering: stops at once and reports a fault when the angle sensor does not follow (e.g. a loose magnet) instead of turning on. Remote pairing: works even when another motor nearby still knows the remote; a motor no longer keeps reconnecting a remote that was paired to another motor."
-      },
-      "caution": {
-        "zh": "升级约 5 分钟，期间不要按马达电源键。",
-        "en": "The update takes about 5 minutes; do not press the motor's power key."
-      }
-    },
-    {
-      "series": "sw-anchor-basic",
-      "product": 1,
-      "format": "gps-bundle",
-      "hardware": "",
-      "version": "2.0.4",
-      "build": 0,
-      "checkpoint": false,
-      "channel": "test",
-      "published": "2026-11-18",
-      "components": [
-        {
-          "target": 3,
-          "name": "gps-steer-driver",
-          "version": "6",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-steer-driver-6.gpsfw",
-          "size": 43024,
-          "sha256": "06d6196115047a184064f96da1aa997d1f556825fa2a89b2a2e6710781aae356"
-        },
-        {
-          "target": 4,
-          "name": "gps-steer-sensor",
-          "version": "1"
-        },
-        {
-          "target": 5,
-          "name": "gps-key-led",
-          "version": "2",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.2-b0/gps-key-led-2.gpsfw",
-          "size": 13167,
-          "sha256": "80f43af3db340ff7257ed32669bbe7275962e9104ffef2fed95d67658cf4dd28"
-        },
-        {
-          "target": 2,
-          "name": "gps-main-ctrl-rtt",
-          "version": "7",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.4-b0/gps-main-ctrl-rtt-7.gpsfw",
-          "size": 197358,
-          "sha256": "b2f12af89ef9781a8af917ca07d1674a4ed720a343ec3b75bd0df2609dd70d83"
-        },
-        {
-          "target": 1,
-          "name": "gps-ble-esp",
-          "version": "7",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-ble-esp-7.gpsfw",
-          "size": 372618,
-          "sha256": "9cdb2fb40315c5b441004121fd908d78acaf29688592983a7dc51bd2b9b8f2e4"
-        }
-      ],
-      "notes": {
-        "zh": "转向定位改进：转到指定角度时不再冲过头、来回摆动，回零更准，定锚时转向更稳。只更新主控。",
-        "en": "Steering positioning: no more overshooting and swinging back and forth when turning to an angle; homing is more accurate and steering steadier while anchoring. Only the main controller is updated."
-      },
-      "caution": {
-        "zh": "升级约 3 分钟，期间不要按马达电源键。",
-        "en": "The update takes about 3 minutes; do not press the motor's power key."
-      }
-    },
-    {
-      "series": "sw-anchor-basic",
-      "product": 1,
-      "format": "gps-bundle",
-      "hardware": "",
-      "version": "2.0.3",
-      "build": 0,
-      "checkpoint": true,
-      "channel": "test",
-      "published": "2026-11-18",
-      "components": [
-        {
-          "target": 3,
-          "name": "gps-steer-driver",
-          "version": "6",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-steer-driver-6.gpsfw",
-          "size": 43024,
-          "sha256": "06d6196115047a184064f96da1aa997d1f556825fa2a89b2a2e6710781aae356"
-        },
-        {
-          "target": 4,
-          "name": "gps-steer-sensor",
-          "version": "1"
-        },
-        {
-          "target": 5,
-          "name": "gps-key-led",
-          "version": "2",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.2-b0/gps-key-led-2.gpsfw",
-          "size": 13167,
-          "sha256": "80f43af3db340ff7257ed32669bbe7275962e9104ffef2fed95d67658cf4dd28"
-        },
-        {
-          "target": 2,
-          "name": "gps-main-ctrl-rtt",
-          "version": "6",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-main-ctrl-rtt-6.gpsfw",
-          "size": 196069,
-          "sha256": "3445f5ba85d4db257e3fc7803a63d2d3eb83b3a70699a73c86543a4d759f1945"
-        },
-        {
-          "target": 1,
-          "name": "gps-ble-esp",
-          "version": "7",
-          "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-anchor-basic-v2.0.3-b0/gps-ble-esp-7.gpsfw",
-          "size": 372618,
-          "sha256": "9cdb2fb40315c5b441004121fd908d78acaf29688592983a7dc51bd2b9b8f2e4"
-        }
-      ],
-      "notes": {
-        "zh": "一次性大版本更新（迁移版）：更新电源板、灯板、主控和蓝牙模块。App 改用新的控制协议，支持新版智能遥控器和小遥控器配对；马达蓝牙名改为 SW-TM-XXXX。新增转向速度三档、电池电压与类型设置和低电量提示、无操作自动关机（默认关闭）、GPS 模组开机自检和 7 个卫星系统的卫星数、故障码与清除故障。以后的马达更新都需要先装这个版本。",
-        "en": "One-time major update (migration): new firmware for the power board, light board, main controller and Bluetooth module. The app uses the new control protocol and pairs the new smart remote and the mini remote; the motor's Bluetooth name becomes SW-TM-XXXX. New: three steering speeds, battery voltage and type settings with low-battery prompts, auto power-off when idle (off by default), GPS module self-check and satellites for 7 systems, fault codes with clearing. Future motor updates require this version."
+        "zh": "一次性大版本更新：更新电源板、灯板、主控和蓝牙模块。App 改用新的控制协议，支持新版智能遥控器和小遥控器配对；马达蓝牙名改为 SW-TM-XXXX。新增转向速度三档、电池电压与类型设置和低电量提示、无操作自动关机（默认关闭）、GPS 模组开机自检和 7 个卫星系统的卫星数、故障码与清除故障。转向更准更稳：转到指定角度不再冲过头、来回摆，回零和定锚时转向更稳；转向角度传感器不跟着转（例如磁铁松动）时自动停下并报故障。以后的马达更新都需要先装这个版本。",
+        "en": "One-time major update: new firmware for the power board, light board, main controller and Bluetooth module. The app uses the new control protocol and pairs the new smart remote and the mini remote; the motor's Bluetooth name becomes SW-TM-XXXX. New: three steering speeds, battery voltage and type settings with low-battery prompts, auto power-off when idle (off by default), GPS module self-check and satellites for 7 systems, fault codes with clearing. Steadier steering: no overshooting or swinging back and forth when turning to an angle, steadier homing and anchoring; the steering stops and reports a fault if its angle sensor does not follow (e.g. a loose magnet). Future motor updates require this version."
       },
       "caution": {
         "zh": "升级约 15 分钟。期间不要按马达电源键、不要断开电池，手机放在马达旁边、不要离开升级页面。电源板控制整机供电，刷电源板时断电可能需要返厂维修。升级后请重新校准（指南针和转向）。智能遥控器要升级到新版本并重新配对后才能使用。",
@@ -199,18 +83,18 @@
       "hardware": "0x00520001",
       "version": "10024",
       "build": 0,
-      "channel": "test",
+      "channel": "stable",
       "size": 1297014,
       "sha256": "6a47f7ff62174d995dda54d2b600cab860e4249b54e0d28ef581ff3bba866a29",
       "url": "https://github.com/marivo-tech/marivo-firmware-releases/releases/download/sw-smart-remote-v10024-b0/sw-smart-remote_v10024.zip",
       "published": "2026-11-18",
       "notes": {
-        "zh": "配合马达迁移版（整机 2.0.3）的新版遥控器：改由马达连接遥控器，在遥控器的配对页面配对；改用新的控制协议；电机设置分类，新增定位卫星、电机信息、故障码、转向速度、指示灯亮度；修复按住转向只动一下、按键偶尔没反应；马达复位后自动恢复连接。",
-        "en": "New remote firmware for the migrated motor (2.0.3): the motor now connects to the remote, paired from the remote's pairing page; new control protocol; motor settings grouped, with satellites, motor info, fault codes, steering speed and light brightness; fixes steering moving only once while held and keys occasionally not responding; reconnects by itself after the motor restarts."
+        "zh": "配合马达整机 2.1.0 的新版遥控器：改由马达连接遥控器，在遥控器的配对页面配对；改用新的控制协议；电机设置分类，新增定位卫星、电机信息、故障码、转向速度、指示灯亮度；修复按住转向只动一下、按键偶尔没反应；马达复位后自动恢复连接。",
+        "en": "New remote firmware for motors updated to 2.1.0: the motor now connects to the remote, paired from the remote's pairing page; new control protocol; motor settings grouped, with satellites, motor info, fault codes, steering speed and light brightness; fixes steering moving only once while held and keys occasionally not responding; reconnects by itself after the motor restarts."
       },
       "caution": {
-        "zh": "只能配合已升级到 2.0.3 的马达使用，出厂版本的马达连不上。升级后在遥控器上打开配对页面，再按住马达灯板上的配对键，配对成功后才能使用。",
-        "en": "Works only with a motor updated to 2.0.3; motors with the original firmware can't connect. After the update, open the pairing page on the remote and hold the pairing key on the motor's light board until pairing succeeds."
+        "zh": "只能配合已升级到 2.1.0 的马达使用，出厂版本的马达连不上。升级后在遥控器上打开配对页面，再按住马达灯板上的配对键，配对成功后才能使用。",
+        "en": "Works only with a motor updated to 2.1.0; motors with the original firmware can't connect. After the update, open the pairing page on the remote and hold the pairing key on the motor's light board until pairing succeeds."
       }
     }
   ]
